@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quick_search_record"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtBackEnv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/leftarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="@string/防疫要項"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/requirements"
+                android:translationX="20dp"
+                android:translationY="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/rectangle_callus_story"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/notosansbold"
+                android:orientation="vertical"
+                android:text="請依旅館規定測量體溫，首先請返回到防疫大使的功能選項頁面並選擇防疫淨化就可測量溫度，會及時顯示會員的溫度並以顏色來區分該會員的溫度值，以此來提醒該會員注意自身狀況，也可以透過體溫回報功能來查看會員測量體溫的紀錄。"
+                android:textColor="#000"
+                android:textSize="30sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:paddingRight="20dp"
+            android:gravity="right"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="個人資料"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/t_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓        名："
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/e_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:hint="請輸入姓名"
+                android:background="@drawable/rectangle_one"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/t_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帳        號："
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/e_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:hint="請輸入帳號"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rectangle_one"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/t_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電子信箱："
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/e_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:hint="請輸入姓名"
+                android:background="@drawable/rectangle_one"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/t_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電        話："
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/e_tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:hint="請輸入帳號"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rectangle_one"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/b_user_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返 回"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#000"
+            android:background="@drawable/rectangle"
+            android:layout_marginRight="50dp"/>
+
+        <Button
+            android:id="@+id/b_user_pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="儲存"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:background="@color/deep_green">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_resized"
+            android:background="@color/deep_green"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="8"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:id="@+id/login"
+            android:layout_width="77dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_resized"
+            android:background="@color/deep_green"
+            />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       android:layout_below="@+id/top">
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/one"/>
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/two"/>
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/three"/>
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/four"/>
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/five"/>
+    </ViewFlipper>
+
+    <ImageButton
+        android:id="@+id/token"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/viewflipper"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:background="@drawable/pass" />
+
+    <ImageButton
+        android:id="@+id/information"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/information"
+        android:layout_below="@id/token"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/epidemic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/viewflipper"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/thermometer" />
+
+    <ImageButton
+        android:id="@+id/roomservice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/roomservice"
+        android:layout_below="@id/epidemic"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"/>
+
+    <ImageButton
+        android:id="@+id/quick_search"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/viewflipper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/search" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/token"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/notosansbold"
+        android:text="@string/pass"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/information"
+        android:text="@string/information"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/notosansbold"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/epidemic"
+        android:text="@string/temp"
+        android:textSize="25sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-20dp"
+        android:fontFamily="@font/notosansbold"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/roomservice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-20dp"
+        android:fontFamily="@font/notosansbold"
+        android:text="@string/roomservice"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/quick_search"
+        android:layout_marginTop="-25dp"
+        android:fontFamily="@font/notosansbold"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textSize="25sp" />
+
+
+
+</RelativeLayout>

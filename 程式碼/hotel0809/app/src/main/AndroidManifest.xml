@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hotel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".roomservice_clean_record_listview"
+            android:exported="false" />
+        <activity
+            android:name=".instant_policy_post1"
+            android:exported="false" />
+        <activity
+            android:name=".instant_policy"
+            android:exported="false" />
+        <activity
+            android:name=".instant_healthy_post"
+            android:exported="false" />
+        <activity
+            android:name=".instant_healthy_post1"
+            android:exported="false" />
+        <activity
+            android:name=".instant_sale_company3"
+            android:exported="false" />
+        <activity
+            android:name=".instant_sale_company2"
+            android:exported="false" />
+        <activity
+            android:name=".instant_sale_company1"
+            android:exported="false" />
+        <activity
+            android:name=".instant_sale"
+            android:exported="false" />
+        <activity
+            android:name=".instant_partner_company3"
+            android:exported="false" />
+        <activity
+            android:name=".instant_partner_company2"
+            android:exported="false" />
+        <activity
+            android:name=".instant_partner_company1"
+            android:exported="false" />
+        <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".instant_partner"
+            android:exported="false" />
+        <activity
+            android:name=".instant"
+            android:exported="false" />
+        <activity
+            android:name=".main_personal"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_food_record"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_bus_record"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_clean_record"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_ok"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_food"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_callout"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_bus"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice_clean"
+            android:exported="false" />
+        <activity
+            android:name=".roomservice"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_season_flower"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_season_forest"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_season"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_journey_spring"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_journey_zhao"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_journey_farm"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_journey_suitcase"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_food_porridge"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_food_wu"
+            android:exported="false" />
+        <activity
+            android:name=".placeholder_food"
+            android:exported="false" />
+        <activity
+            android:name=".lover_transportation"
+            android:exported="false" />
+        <activity
+            android:name=".lovers_sight"
+            android:exported="false" />
+        <activity
+            android:name=".lovers_lodging"
+            android:exported="false" />
+        <activity
+            android:name=".callus_service"
+            android:exported="false" />
+        <activity
+            android:name=".callus_official"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_official"
+            android:exported="false" />
+        <activity
+            android:name=".callus_story"
+            android:exported="false" />
+        <activity
+            android:name=".story"
+            android:exported="false" />
+        <activity
+            android:name=".function_number"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_member"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_regok"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_newpassword"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_forget"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_user"
+            android:exported="false" />
+        <activity
+            android:name=".pass_token"
+            android:exported="false" />
+        <activity
+            android:name=".pass_house"
+            android:exported="false" />
+        <activity
+            android:name=".pass_door"
+            android:exported="false" />
+        <activity
+            android:name=".pass_tour"
+            android:exported="false" />
+        <activity
+            android:name=".pass_entertainment"
+            android:exported="false" />
+        <activity
+            android:name=".epidemic_prevention"
+            android:exported="false" />
+        <activity
+            android:name=".epidemic_prevention_retur"
+            android:exported="false" />
+        <activity
+            android:name=".epidemic_prevention_purify"
+            android:exported="false" />
+        <activity
+            android:name=".epidemic_prevention_requirements"
+            android:exported="false" />
+        <activity
+            android:name=".quick_search"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
